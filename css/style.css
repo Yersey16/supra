@@ -4,6 +4,7 @@ body{
 }
 header{
     color: whitesmoke;
+    width: 100%;
 }
 .navbar-brand img{
     width: 60px;
