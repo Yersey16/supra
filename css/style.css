@@ -6,6 +6,6 @@ header{
     color: whitesmoke;
     width: 100%;
 }
-.navbar-brand img{
+header div a img{
     width: 60px;
 }
