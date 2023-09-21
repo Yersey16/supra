@@ -2,3 +2,9 @@ body{
     background-color: #212121;
     color: white;
 }
+header{
+    color: whitesmoke;
+}
+.navbar-brand img{
+    width: 60px;
+}
