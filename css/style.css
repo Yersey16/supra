@@ -9,3 +9,12 @@ header{
 header div a img{
     width: 60px;
 }
+.nav-link{
+    color: whitesmoke;
+}
+.nav-link:hover{
+    color: red;
+}
+.navbar{
+    background-color: #212529;
+}
