@@ -1,6 +1,6 @@
 body{
     background-color: #212121;
-    color: white;
+    color: whitesmoke;
 }
 header{
     color: whitesmoke;
@@ -20,4 +20,17 @@ header div a img{
 }
 .accordion{
     background-color: #212529;
+}
+.modal{
+    color: #212121;
+}
+.card{
+    background-color: #212529;
+    color: whitesmoke;
+}
+.card-header h2{
+    color: whitesmoke;
+}
+.navbar-toggler{
+    background-color: #757575;
 }
