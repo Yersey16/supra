@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dodge Challenger</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  
+  <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title"><img src="img/logo.jpg" alt="">Home</h1>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a class="nav-link" href="index.html">Supra MK4</a>
+      <hr>
+      <a class="nav-link" href="challenger.html">Dodge Challenger</a>
+      <hr>
+      <a class="nav-link" href="mustang.html">Ford Mustang</a>
+    </div>
+  </div>
+
     <div class="container_fluid">
 
         <!-- Carousel -->
@@ -71,6 +86,9 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="mustang.html">Ford Mustang</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#modelos">Modelos</a>
                     </li>  
                   </ul>
                 </div>
@@ -194,15 +212,57 @@
           </div>
         </div>
         <!--Fin Modal-->
+      
+        <!-- Inicio Scroll -->
+        <a id="scroll-up" class="scroll-up" href="#">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path fill="rgba(255,255,255,1)" d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
+            </path>
+          </svg>
+        </a>
+        <!-- Final Scroll -->
 
-        <!-- Inicio Contenido -->
+        <!-- Inicio Botón -->
 
-        <div id="contenido">
-          
+        <a style="--clr: #cc0000" class="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          <span class="button__icon-wrapper">
+              <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
+                  <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+              </svg>
+
+              <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
+                  <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
+              </svg>
+          </span>
+          Home
+        </a>
+
+        <!-- Final Botón -->
+        <!-- Inicio Scrollspy -->
+        <div class="modelos" id="modelos">
+          <h2>Modelos a travez del tiempo</h2>
+          <br>
+          <p>Aquí te presento una breve descripción de algunos de los modelos más emblemáticos del Toyota Supra:</p>
+          <br>
+          <p><h6>Toyota Supra MKI (A40/A50) - 1978-1981:</h6> El primer modelo de Toyota Supra se basó en el Toyota Celica y estaba disponible con motores de 6 cilindros en línea. Fue una variante más deportiva y potente del Celica.</p>
+          <img src="img/SupraMKI.jpg" alt="" width="20%">
+          <br>
+          <p><h6>Toyota Supra MKII (A60) - 1982-1986:</h6> Este modelo marcó una transición hacia una plataforma más independiente y un diseño más distintivo. Inicialmente, estaba disponible con motores de 4 y 6 cilindros en línea.</p>
+          <img src="img/SupraMKII.jpg" alt="" width="20%">
+          <br>
+          <p><h6>Toyota Supra MKIII (A70) - 1986-1992:</h6> El Supra MKIII se convirtió en un automóvil deportivo más enfocado, disponible con una gama de motores turboalimentados y atmosféricos. Fue durante este período que el Supra ganó popularidad como un coche deportivo potente y emocionante.</p>
+          <img src="img/SupraMKIII.jpg" alt="" width="20%">
+          <br>
+          <p><h6>Toyota Supra MKIV (A80) - 1993-1998:</h6> El Supra MKIV es uno de los modelos más icónicos de la serie. Es conocido por su diseño elegante y motores turboalimentados, incluyendo el famoso motor 2JZ-GTE de 3.0 litros, que es altamente modificado en la comunidad de entusiastas del automóvil.</p>
+          <img src="img/SupraMKIV.jpeg" alt="" width="20%">
+          <br>
+          <p><h6>Toyota Supra MKV (A90) - 2020 en adelante:</h6> Después de una larga pausa en la producción, Toyota reintrodujo el Supra en el mercado en 2020. El Supra MKV se desarrolló en colaboración con BMW y comparte muchas similitudes con el BMW Z4. Está disponible con un motor turboalimentado de 6 cilindros en línea y ha sido elogiado por su rendimiento y manejo.</p>
+          <img src="img/SupraMKV.jpg" alt="" width="20%">
+          <br>
         </div>
-
-        <!-- Fin Contenido -->
+        <!-- Fin Scrollspy -->
         </div>      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js" ></script>
 </body>
 </html>
