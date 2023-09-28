@@ -1,6 +1,7 @@
 body{
     background-color: #212121;
     color: whitesmoke;
+    position: relative;
 }
 header{
     color: whitesmoke;
@@ -8,6 +9,9 @@ header{
 }
 header div a img{
     width: 60px;
+}
+.offcanvas-title img{
+    width: 100px;
 }
 .nav-link{
     color: whitesmoke;
@@ -34,3 +38,101 @@ header div a img{
 .navbar-toggler{
     background-color: #757575;
 }
+.button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .75rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: .75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    float: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color .3s;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #000;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #000;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform .3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform .3s ease-in-out .1s;
+    transform: translate(0);
+  }
+  /* <reset-style> ============================ */
+a {
+    text-decoration: none;
+  }
+  /* <main-style> ============================ */
+  .scroll-up {
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+    z-index: 10;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background-color: #cc0000;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: bottom .4s, transform .4s;
+  }
+  
+  .scroll-up:hover {
+    transform: translateY(-.25rem);
+  }
+  
+  /* Show scroll-up */
+  ._show-scroll {
+    bottom: 3rem;
+  }
+  
+  @media (max-width: 1199.98px) {
+    .scroll-up {
+      right: 1rem;
+    }
+  }
+  .modelos img{
+    border-style: hidden;
+    border-radius: 10%;
+  }
